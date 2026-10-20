@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Compress-E — Official Web Application
 
-# Run and deploy your AI Studio app
+The official web compressor for **Compress-E** by Oshie Labs.
 
-This contains everything you need to run your app locally.
+Fast, client-side, privacy-first image and photo compression directly in the browser. 
 
-View your app in AI Studio: https://ai.studio/apps/ed825201-1065-4b68-9b6a-3459cc1586ae
+## Key Features
 
-## Run Locally
+- **100% On-Device Processing:** Images are compressed entirely within the browser via HTML5 Canvas. Zero photos are ever uploaded to cloud servers.
+- **Precision KB Targeting:** Specify exact target size constraints for job portals, exam uploads, and document attachments.
+- **Multi-Format Support:** JPG, PNG, and WebP compression with real-time quality sliders.
+- **Legal Compliance:** Integrated Privacy Policy (`/privacy.html`), Terms of Service (`/terms.html`), and Google `app-ads.txt`.
 
-**Prerequisites:**  Node.js
+## Project Structure
 
+```
+├── public/                 # Static assets, legal pages, Cloudflare headers
+│   ├── _headers            # Cloudflare Pages security & caching headers
+│   ├── app-ads.txt         # Google AdMob verification
+│   ├── privacy.html        # Official Privacy Policy
+│   ├── terms.html          # Official Terms of Use
+│   └── assets/             # Production application bundle
+├── src/                    # React + TypeScript source components
+├── index.html              # Main HTML entry
+├── vite.config.ts          # Vite build configuration
+└── package.json            # Dependencies & build scripts
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build production bundle
+npm run build
+```
+
+## Deployment
+
+Configured for zero-config deployment on **Cloudflare Pages**, **Vercel**, or **Netlify**.
+Build output directory: `dist` (or `public` for static fallback).
