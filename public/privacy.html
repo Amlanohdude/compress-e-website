@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Compress-E</title>
+    <meta name="description" content="Privacy Policy for Compress-E (Image Compressor) by Oshie Labs. 100% offline image compression.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #090A0F;
+            --surface: rgba(255, 255, 255, 0.03);
+            --surface-border: rgba(255, 255, 255, 0.08);
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.15);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(15, 23, 42, 0.6);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            padding: 32px 16px 80px;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--surface-border);
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+        .brand-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface);
+            border: 1px solid var(--surface-border);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateX(-2px);
+        }
+        .header-section {
+            margin-bottom: 48px;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--primary-glow);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(99, 102, 241, 0.05));
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 40px;
+        }
+        .highlight-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-card {
+            background: var(--surface);
+            border: 1px solid var(--surface-border);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 24px;
+            transition: border-color 0.2s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        p {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+        p:last-child { margin-bottom: 0; }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 14px 0;
+        }
+        li {
+            color: var(--text-muted);
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        li::before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.3rem;
+            position: absolute;
+            left: 6px;
+            top: -2px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--surface-border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="nav-bar">
+            <a href="/" class="brand">
+                <div class="brand-icon">CE</div>
+                Compress-E
+            </a>
+            <a href="/" class="btn-back">← Back to Home</a>
+        </header>
+
+        <div class="header-section">
+            <span class="badge">Legal Document</span>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: May 8, 2026 &bull; Oshie Labs</p>
+        </div>
+
+        <div class="highlight-box">
+            <div class="highlight-title">🔒 100% Offline Image Processing</div>
+            <p>Compress-E is engineered with privacy as a foundational priority. All image compression, resizing, format conversion, and PDF operations occur <strong>locally on your device</strong>. We do not upload your photos, documents, or personal files to any external servers, and we never have access to your original or compressed images.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>1. Introduction</h2>
+            <p>Oshie Labs ("we," "our," or "us") built the Compress-E (Image Compressor) app as a commercial application. This SERVICE is provided by Oshie Labs and is intended for use "as is."</p>
+            <p>This page informs visitors regarding our policies with the collection, use, and disclosure of personal information if anyone decides to use our Service.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>2. Offline Image Processing (No Data Uploaded)</h2>
+            <p>Compress-E (Image Compressor) is designed with privacy as a priority. All image compression, resizing, format conversion, and PDF operations occur locally on your device.</p>
+            <ul>
+                <li>We do not upload your photos, documents, or personal files to any external servers.</li>
+                <li>We do not have access to your original or compressed images.</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>3. Information Collection and Use</h2>
+            <p>While using our app, we do not require you to provide us with any personally identifiable information. However, the app uses third-party services that may collect information used to identify you.</p>
+            <p><strong>Third-Party Service Providers:</strong></p>
+            <ul>
+                <li><strong>Google Play Services:</strong> Core platform analytics and billing infrastructure.</li>
+                <li><strong>Google AdMob:</strong> Advertising framework serving non-intrusive banner, interstitial, and rewarded ads.</li>
+            </ul>
+            <p>These services may collect data such as advertising IDs, IP addresses, and crash logs to serve relevant advertisements and monitor app performance.</p>
+            <p><strong>In-App Purchases:</strong></p>
+            <p>The app offers in-app purchases (e.g., a "One-Time Pro" upgrade). All payment processing is handled securely by Google Play. We do not collect, process, or store your credit card information, billing address, or any financial data.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>4. Support Communications & Device Information</h2>
+            <p>When you choose to contact us for support using the "Contact Us" feature in the app's Settings, your email app will open with a pre-filled message that includes technical diagnostic info to help us assist you:</p>
+            <ul>
+                <li>App Version (e.g., v1.0.3)</li>
+                <li>Android OS Version (e.g., Android 14, API 34)</li>
+                <li>Device Model (e.g., Samsung Galaxy A53 5G)</li>
+                <li>Device Manufacturer (e.g., Samsung)</li>
+            </ul>
+            <p>This information is:</p>
+            <ul>
+                <li>Collected only when you voluntarily choose to send a support email. It is never collected passively or automatically in the background.</li>
+                <li>Used solely to diagnose and resolve your support issue.</li>
+                <li>Sent directly to our support inbox (<a href="mailto:oshielabs.support@gmail.com">oshielabs.support@gmail.com</a>) via your personal email client. We do not intercept or store this data on any external server.</li>
+            </ul>
+            <p>You can delete any or all of this pre-filled information from the email before sending it if you prefer.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>5. Log Data</h2>
+            <p>Whenever you use our Service, in the event of an error or crash in the app, we collect diagnostic data and information (through Google Play and third-party products) called Log Data. This may include information such as your device Internet Protocol ("IP") address, device name, operating system version, app configuration at the time of error, and runtime crash metrics.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>6. Security</h2>
+            <p>We value your trust in using our app, and all your files stay entirely on your physical device. When interacting with online services (such as Google Play billing or ads), industry-standard commercial encryption protocols (TLS/HTTPS) are utilized by Google's native SDKs.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>7. Children's Privacy</h2>
+            <p>This app is not structured to attract children under the age of 13. We do not knowingly collect personally identifiable information from children.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Any updates become effective immediately upon posting to this page.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding our Privacy Policy, please reach out to us at: <a href="mailto:oshielabs.support@gmail.com">oshielabs.support@gmail.com</a>.</p>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/terms.html">Terms of Use</a>
+                <a href="mailto:oshielabs.support@gmail.com">Support</a>
+                <a href="https://play.google.com/store/apps/details?id=com.oshielabs.compresse" target="_blank">Google Play</a>
+            </div>
+            <p>&copy; 2026 Oshie Labs. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
